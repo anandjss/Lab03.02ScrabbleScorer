@@ -62,7 +62,7 @@ public class ScrabbleScorer {
         // find indexOf the first letter in alpha
         // get the corresponding bucket
        if(word.length() > 0)    {
-           if(alpha.indexOf(word.substring(0,1)) > 0 && (Collections.binarySearch(dictionary.get(alpha.indexOf(word.substring(0,1))), word) >= 0 ))
+           if(alpha.indexOf(word.substring(0,1)) >= 0  && (Collections.binarySearch(dictionary.get(alpha.indexOf(word.substring(0,1))), word) >= 0 ))
                return true;
            else
                return false;
